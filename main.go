@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/G-shigod/banking_emulator/internal/card"
+	"github.com/G-shigod/Card-creator-golang/internal/card"
 )
 
 func main() {

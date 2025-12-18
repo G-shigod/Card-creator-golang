@@ -6,7 +6,7 @@ import (
 
 func TestCard(t *testing.T) {
 	cfg := DebitCardConfig{
-		CardBase: []int{4, 0, 0, 0, 0, 0},
+		CardBase: []int{4, 4, 0, 0, 3, 8},
 		CardLen:  16,
 	}
 
