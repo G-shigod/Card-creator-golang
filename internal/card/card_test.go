@@ -5,8 +5,13 @@ import (
 )
 
 func TestCard(t *testing.T) {
-	for i := 0; i < 30; i++ {
-		cardT, err := CreateCard()
+	cfg := DebitCardConfig{
+		CardBase: []int{4, 0, 0, 0, 0, 0},
+		CardLen:  16,
+	}
+
+	for i := 0; i < 900; i++ {
+		cardT, err := CreateCard(cfg)
 		if err != nil {
 			t.Fatalf("failed to generate card: #%v, with err %v", i, err)
 		}
